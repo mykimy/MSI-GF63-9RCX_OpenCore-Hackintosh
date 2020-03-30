@@ -1,7 +1,7 @@
 TODO
 - USB Mapping
-- Audio
-- HDMI with audio
+- Audio (done)
+- HDMI with audio (a voir si avec "hda-gfx" = "onboard-2" CF: https://1revenger1.gitbook.io/laptop-guide/post-installation/configuring-your-audio-device)
 - Sleep
 - Keyboard
 - Backlight control
