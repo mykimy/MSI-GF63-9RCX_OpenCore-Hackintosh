@@ -1,13 +1,11 @@
 TODO
-- USB Mapping
+- SMBus SSDT: https://khronokernel.github.io/Getting-Started-With-ACPI/Universal/smbus.html
+- USB Mapping (done)
 - Audio (done)
 - HDMI with audio (a voir si avec "hda-gfx" = "onboard-2" CF: https://1revenger1.gitbook.io/laptop-guide/post-installation/configuring-your-audio-device)
 - Sleep
 - Keyboard
-- Backlight control
-- SSDTs: https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/ktext#ssdts
-- Embedded Controller (EC): https://1revenger1.gitbook.io/laptop-guide/prepare-install-
-macos/embedded-controller-ec
+- Backlight control (done)
 - config.plist DeviceProperties :
   - https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/intel-
 config.plist/coffee-lake#deviceproperties
@@ -15,14 +13,6 @@ config.plist/coffee-lake#deviceproperties
 configuration#intel-coffee-lake-comet-lake-14-nm
 - ScanPolicy. Initially you want 0 here, but once you are up and running
 check Scanpolicy Docs for why you should change
-- We set Generic -> ROM to either an Apple ROM (dumped from a real Mac), your NIC MAC
-address, or any random MAC address (could be just 6 random bytes, for this guide we'll use
-11223300 0000. After install follow the Fixing iServices page on how to find your real MAC
-Address)
-Reminder that you want either an invalid serial or valid serial numbers but those not in
-use, you want to get a message back like: "Invalid Serial" or "Purchase Date not
-Validated"
-Apple Check Coverage page
 
 A VOIR
 - NVMeFix: https://github.com/acidanthera/NVMeFix
@@ -32,8 +22,6 @@ ACPI/Universal/awac.html
 see the BusID iGPU patching page
 - framebuffer-fbmem: This patches framebuffer memory, and is used when you cannot configure
 DVMT to 64MB in the BIOS. Do not use if the DVMT BIOS option is available.
-- A voir si XHCI-unsupported.kext nécessaire: https://github.com/RehabMan/OS-X-USB-Inject-
-All
 
 CONFIG.PLIST:
 AppleCpuPmCfgLock: YES
