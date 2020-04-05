@@ -16,14 +16,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-GPI0.aml</string>
-				<key>Path</key>
-				<string>SSDT-GPI0.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-HPET.aml</string>
 				<key>Path</key>
 				<string>SSDT-HPET.aml</string>
@@ -72,20 +64,20 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-XOSI.aml</string>
+				<string>SSDT-TPD0.aml</string>
 				<key>Path</key>
-				<string>SSDT-XOSI.aml</string>
+				<string>SSDT-TPD0.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
-            <dict>
-                <key>Comment</key>
-                <string>SSDT-MSI-FNKEY.aml</string>
-                <key>Path</key>
-                <string>SSDT-MSI-FNKEY.aml</string>
-                <key>Enabled</key>
-                <true/>
-            </dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-MSI-FNKEY.aml</string>
+				<key>Path</key>
+				<string>SSDT-MSI-FNKEY.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array>
@@ -169,16 +161,6 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>AAAAAA==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>_OSI to XOSI Rename</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X09TSQ==</data>
-				<key>Replace</key>
-				<data>WE9TSQ==</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -433,9 +415,9 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooI2C</string>
+				<string>Contents/MacOS/VoodooI2CServices</string>
 				<key>BundlePath</key>
-				<string>VoodooI2C.kext</string>
+				<string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -465,9 +447,9 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooI2CServices</string>
+				<string>Contents/MacOS/VoodooI2C</string>
 				<key>BundlePath</key>
-				<string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
+				<string>VoodooI2C.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -484,22 +466,6 @@
 				<string>Contents/MacOS/VoodooI2CHID</string>
 				<key>BundlePath</key>
 				<string>VoodooI2CHID.kext</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooInput</string>
-				<key>BundlePath</key>
-				<string>VoodooInput.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -535,13 +501,13 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>PS2Mouse: disabled as it is a trackpad I2C device</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
@@ -551,13 +517,13 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>PS2Trackpad: disabled as it is a I2C trackpad</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
