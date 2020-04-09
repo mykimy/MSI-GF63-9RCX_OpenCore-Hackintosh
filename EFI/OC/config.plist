@@ -794,7 +794,7 @@
 		<array>
 			<string>ApfsDriverLoader.efi</string>
 			<string>FwRuntimeServices.efi</string>
-			<string>VBoxHfs.efi</string>
+			<string>HfsPlus.efi</string>
 		</array>
 		<key>Audio</key>
 		<dict>
