@@ -744,7 +744,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-wegnoegpu</string>
+				<string>-wegnoegpu agdpmod=vit9696</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -812,17 +812,17 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02953902QXN9PR8C</string>
+			<string>C02016104J9N9PR8C</string>
 			<key>ROM</key>
 			<data>ESIzAAAA</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>MacBookPro15,2</string>
+			<string>MacBookPro16,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02C36Z0JHCC</string>
+			<string>C02CL0R9MD6N</string>
 			<key>SystemUUID</key>
-			<string>ED3825DF-9A8E-4A6E-9AFC-54C17AC2E885</string>
+			<string>212DF968-EB31-467A-9EDA-63D731946B45</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
