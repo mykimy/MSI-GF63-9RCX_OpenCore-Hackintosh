@@ -12,31 +12,31 @@ Vanilla macOS Catalina installation on GF63 Thin 9RCX.
 | Hard Disk           | Samsung NVMe SSD Controller PM981    |
 | Integrated Graphics | Intel UHD Graphics 630                     |
 | Monitor             | IPS FHD 1920x1080 (15.6 inch) |
-| Sound Card          | Realtek Audio           |
+| Sound Card          | Realtek Audio ALC269VC         |
 | Wireless Card       | Intel Wireless 8265                   |
 | USB                 | 1x USB type C port and 3x USB 3.2 gen 1 ports  |
 
 ## What Works
 - Native Power Management
 - Intel UHD 630 Graphics Acceleration
-- HDMI out
+- HDMI Video/Audio Out
 - Brightness control
-- Sleep
-- Realtek Audio via AppleALC
+- Sleep/Wake (with hibernate mode 3)
+- Realtek 229VC Audio
 - Integrated Camera
 - Trackpad with multi-touch gestures
 - Battery status
-- Bluetooth
+- Integrated Bluetooth
 - All USB Ports
 - Function Key
 
 ## What is in _Work In Progress_
 - NMVe (working but still unstable)
-- HDMI Audio Out (need to be patched)
 
 ## What Doesn't Work
 - Discrete graphic card is not working, since macOS doesn't support Optimus technology
 - Integrated Intel Wifi card
+
 ## Installation
 
 ### First-time Installation Steps
