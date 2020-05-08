@@ -42,6 +42,7 @@ Vanilla macOS Catalina installation on GF63 Thin 9RCX.
 ### First-time Installation Steps
 - Change BIOS settings
     - Turn off Secure Boot
+    - Turn off CFG Lock
     - Disable VT-D
     - Disable Fast Boot
     - Select UEFI mode without CSM
