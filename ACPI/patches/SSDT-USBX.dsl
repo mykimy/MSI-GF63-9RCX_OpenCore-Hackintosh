@@ -8,33 +8,32 @@
  * being the most reliable device for testing USB port
  * charging support.
  */
-DefinitionBlock ("", "SSDT", 2, "DRTNIA", "SsdtEC", 0x00001000)
+DefinitionBlock ("", "SSDT", 2, "hack", "SsdtUSBX", 0)
 {
-    Device (USBX)
+    Scope (\_SB)
     {
-        Name (_ADR, Zero)  // _ADR: Address
-        Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+        Device (USBX)
         {
-            If ((Arg2 == Zero))
+            Name (_ADR, Zero)  // _ADR: Address
+            Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                Return (Buffer (One)
+                If ((Arg2 == Zero))
                 {
-                     0x03                                             // .
+                    Return (Buffer (One)
+                    {
+                         0x03                                             // .
+                    })
+                }
+
+                Return (Package (0x04)
+                {
+                    "kUSBSleepPortCurrentLimit",
+                    0x0BB8,
+                    "kUSBWakePortCurrentLimit",
+                    0x0BB8
                 })
             }
-
-            Return (Package (0x08)
-            {
-                "kUSBSleepPowerSupply", 
-                0x13EC, 
-                "kUSBSleepPortCurrentLimit", 
-                0x0834, 
-                "kUSBWakePowerSupply", 
-                0x13EC, 
-                "kUSBWakePortCurrentLimit", 
-                0x0834
-            })
         }
+
     }
 }
-
