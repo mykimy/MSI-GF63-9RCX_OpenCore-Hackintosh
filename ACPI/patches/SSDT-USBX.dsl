@@ -8,7 +8,7 @@
  * being the most reliable device for testing USB port
  * charging support.
  */
-DefinitionBlock ("", "SSDT", 2, "hack", "SsdtUSBX", 0)
+DefinitionBlock ("", "SSDT", 2, "hack", "SsdtUSBX", 0x00001000)
 {
     Scope (\_SB)
     {
@@ -25,15 +25,19 @@ DefinitionBlock ("", "SSDT", 2, "hack", "SsdtUSBX", 0)
                     })
                 }
 
-                Return (Package (0x04)
+                Return (Package (0x08)
                 {
-                    "kUSBSleepPortCurrentLimit",
-                    0x0BB8,
-                    "kUSBWakePortCurrentLimit",
+                    "kUSBSleepPowerSupply", 
+                    0x13EC, 
+                    "kUSBSleepPortCurrentLimit", 
+                    0x0BB8, 
+                    "kUSBWakePowerSupply", 
+                    0x13EC, 
+                    "kUSBWakePortCurrentLimit", 
                     0x0BB8
                 })
             }
         }
-
     }
 }
+
