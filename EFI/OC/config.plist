@@ -72,6 +72,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>SSDT-WAK.aml</string>
+				<key>Path</key>
+				<string>SSDT-WAK.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>SSDT-DDGPU.aml</string>
 				<key>Path</key>
 				<string>SSDT-DDGPU.aml</string>
@@ -80,9 +88,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-DDGPU-WAK.aml</string>
+				<string>SSDT-FAN-MOD.aml</string>
 				<key>Path</key>
-				<string>SSDT-DDGPU-WAK.aml</string>
+				<string>SSDT-FAN-MOD.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>

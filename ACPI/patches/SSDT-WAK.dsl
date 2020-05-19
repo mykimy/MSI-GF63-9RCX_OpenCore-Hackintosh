@@ -1,12 +1,11 @@
-// This SSDT turn off the dGPU after wake.
-// Otherwise, upon waking the laptop the dGPU might be residually powered
-// and power consumption jumps (ex. 1.5W idle to 5W idle), which kills battery life.
-//
-// DSDT patches to rename _WAK to ZWAK are needed.
+/*
+ * Custom ACPI methods call on wake event.
+ */
 DefinitionBlock("", "SSDT", 2, "hack", "PTSWAK", 0)
 {
     External(ZWAK, MethodObj)
-    External(_SB.PCI0.PEG0.PEGP._OFF, MethodObj)
+    External(RMD1.DOFF, MethodObj)
+    External(MFAN.QMOD, MethodObj)
 
     Method(_WAK, 1)
     {
@@ -16,7 +15,9 @@ DefinitionBlock("", "SSDT", 2, "hack", "PTSWAK", 0)
         If (_OSI ("Darwin"))
         {
             // disable discrete graphics
-            \_SB.PCI0.PEG0.PEGP._OFF()
+            \RMD1.DOFF()
+            // fan mod
+            \MFAN.QMOD()
         }
 
         // return value from original _WAK

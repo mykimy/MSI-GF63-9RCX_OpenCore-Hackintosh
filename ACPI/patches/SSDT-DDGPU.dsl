@@ -22,14 +22,12 @@ External(_SB.PCI0.PEG0.PEGP._OFF, MethodObj) // ACPI Path of dGPU
 
         Method(_INI)
         {
-            If (_OSI ("Darwin"))
-            {
-               // disable discrete graphics (Nvidia/Radeon) if it is present
-               If (CondRefOf(\_SB.PCI0.PEG0.PEGP._OFF)) { \_SB.PCI0.PEG0.PEGP._OFF() }
-            }
-            Else
-            {
-            }
+            DOFF()
+        }
+        
+        Method(DOFF)
+        {
+            \_SB.PCI0.PEG0.PEGP._OFF()
         }
     }
 }
