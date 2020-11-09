@@ -88,6 +88,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>SSDT-DNVME.aml</string>
+				<key>Path</key>
+				<string>SSDT-DNVME.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>SSDT-FAN-MOD.aml</string>
 				<key>Path</key>
 				<string>SSDT-FAN-MOD.aml</string>
