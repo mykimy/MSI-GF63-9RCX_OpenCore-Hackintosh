@@ -30,12 +30,10 @@ Vanilla macOS Catalina installation on GF63 Thin 9RCX.
 - All USB Ports
 - Function Key
 
-## What is in _Work In Progress_
-- NMVe (working but still unstable)
-
 ## What Doesn't Work
 - Discrete graphic card is not working, since macOS doesn't support Optimus technology
 - Integrated Intel Wifi card
+- NMVe
 
 ## Installation
 
@@ -49,7 +47,7 @@ Vanilla macOS Catalina installation on GF63 Thin 9RCX.
     - Follow Windows, macOS or Linux [guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/opencore-efi#setting-up-the-efi)
     - Copy the provided `EFI` folder into the USB drive EFI partition of the newly created install media
     - Change ROM configuration of OpenCore, follow this [guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/post-install/post-install/iservices#fixing-rom)
-- Install macOS (avoid installing on NVMe hard drive as it is unstable for now, you can use a secondary SSD with the SATA port of the laptop)
+- Install macOS (do not install on NVMe hard drive as it is unstable, you can use a secondary SSD with the SATA port of the laptop)
 - Copy the `EFI` folder from the USB installation media to the `EFI` partition of the installed macOS drive, follow this [guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/post-install/post-install/oc2hdd)
 
 ### Upgrade
