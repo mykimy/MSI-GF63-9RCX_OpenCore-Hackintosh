@@ -219,7 +219,7 @@
 			<key>EnableSafeModeSlide</key>
 			<true/>
 			<key>EnableWriteUnprotector</key>
-			<true/>
+			<false/>
 			<key>ForceExitBootServices</key>
 			<false/>
 			<key>ProtectMemoryRegions</key>
@@ -227,9 +227,11 @@
 			<key>ProtectSecureBoot</key>
 			<false/>
 			<key>ProtectUefiServices</key>
-			<false/>
+			<true/>
 			<key>ProvideCustomSlide</key>
 			<false/>
+            <key>ProvideMaxSlide</key>
+            <integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
 			<true/>
 			<key>SetupVirtualMap</key>
@@ -393,8 +395,6 @@
 				<string>Non-Volatile memory controller</string>
 				<key>model</key>
 				<string>NVMe SSD Controller SM981/PM981/PM983</string>
-				<key>ps-max-latency-us</key>
-				<data>AAAAAAAAAAA=</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1D,0x4)</key>
 			<dict>
@@ -843,10 +843,16 @@
 		</array>
 		<key>Emulate</key>
 		<dict>
+			<key>DummyPowerManagement</key>
+			<false/>
 			<key>Cpuid1Data</key>
 			<data></data>
 			<key>Cpuid1Mask</key>
 			<data></data>
+			<key>MaxKernel</key>
+			<string></string>
+			<key>MinKernel</key>
+			<string></string>
 		</dict>
 		<key>Patch</key>
 		<array>
@@ -895,8 +901,6 @@
 			<false/>
 			<key>DisableRtcChecksum</key>
 			<false/>
-			<key>DummyPowerManagement</key>
-			<false/>
 			<key>ExternalDiskIcons</key>
 			<false/>
 			<key>IncreasePciBarSize</key>
@@ -905,6 +909,8 @@
 			<false/>
 			<key>PanicNoKextDump</key>
 			<true/>
+            <key>LegacyCommpage</key>
+            <false/>
 			<key>PowerTimeoutKernelPanic</key>
 			<true/>
 			<key>ThirdPartyDrives</key>
@@ -967,20 +973,30 @@
 			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
+            <key>ApECID</key>
+            <integer>0</integer>
 			<key>AuthRestart</key>
 			<false/>
-			<key>BlacklistAppleUpdate</key>
-			<true/>
 			<key>BootProtect</key>
 			<string>Bootstrap</string>
+            <key>DmgLoading</key>
+            <string>Signed</string>
+            <key>EnablePassword</key>
+            <false/>
 			<key>ExposeSensitiveData</key>
 			<integer>6</integer>
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
+            <key>PasswordHash</key>
+            <data></data>
+            <key>PasswordSalt</key>
+            <data></data>
+            <key>ScanPolicy</key>
+            <integer>0</integer>
+            <key>SecureBootModel</key>
+            <string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
-			<key>ScanPolicy</key>
-			<integer>0</integer>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -1062,6 +1078,8 @@
 		<dict>
 			<key>AdviseWindows</key>
 			<false/>
+            <key>SystemMemoryStatus</key>
+            <string>Auto</string>
 			<key>MLB</key>
 			<string>C02016104J9N9PR8C</string>
 			<key>ROM</key>
@@ -1152,6 +1170,8 @@
 			<string></string>
 			<key>DirectGopRendering</key>
 			<false/>
+            <key>ForceResolution</key>
+            <false/>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
 			<key>ProvideConsoleGop</key>
@@ -1166,6 +1186,8 @@
 			<false/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
+            <key>UgaPassThrough</key>
+            <false/>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
@@ -1177,12 +1199,18 @@
 			<false/>
 			<key>AppleEvent</key>
 			<false/>
+            <key>AppleFramebufferInfo</key>
+            <false/>
 			<key>AppleImageConversion</key>
 			<false/>
+            <key>AppleImg4Verification</key>
+            <false/>
 			<key>AppleKeyMap</key>
 			<false/>
 			<key>AppleRtcRam</key>
 			<false/>
+            <key>AppleSecureBoot</key>
+            <false/>
 			<key>AppleSmcIo</key>
 			<false/>
 			<key>AppleUserInterfaceTheme</key>
