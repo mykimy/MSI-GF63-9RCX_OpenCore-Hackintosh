@@ -238,8 +238,8 @@
 			<true/>
 			<key>ProvideCustomSlide</key>
 			<false/>
-            <key>ProvideMaxSlide</key>
-            <integer>0</integer>
+			<key>ProvideMaxSlide</key>
+			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
 			<true/>
 			<key>SetupVirtualMap</key>
@@ -293,8 +293,16 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,3</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 				<key>layout-id</key>
-				<integer>6</integer>
+				<data>BgAAAA==</data>
+				<key>model</key>
+				<string>Cannon Lake PCH cAVS</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x0,0x0)</key>
 			<dict>
@@ -430,21 +438,6 @@
 				<string>ISA bridge</string>
 				<key>model</key>
 				<string>HM470 Chipset LPC/eSPI Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,31,3</string>
-				<key>device_type</key>
-				<string>Audio device</string>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>layout-id</key>
-				<data>
-				BgAAAA==
-				</data>
-				<key>model</key>
-				<string>Cannon Lake PCH cAVS</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x4)</key>
 			<dict>
@@ -901,8 +894,8 @@
 			<false/>
 			<key>PanicNoKextDump</key>
 			<true/>
-            <key>LegacyCommpage</key>
-            <false/>
+			<key>LegacyCommpage</key>
+			<false/>
 			<key>PowerTimeoutKernelPanic</key>
 			<true/>
 			<key>ThirdPartyDrives</key>
@@ -921,13 +914,13 @@
 			<key>HibernateMode</key>
 			<string>None</string>
 			<key>PickerMode</key>
-			<string>Builtin</string>
+			<string>External</string>
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>ConsoleAttributes</key>
 			<integer>0</integer>
 			<key>PickerAttributes</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PollAppleHotKeys</key>
@@ -965,28 +958,28 @@
 			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
-            <key>ApECID</key>
-            <integer>0</integer>
+			<key>ApECID</key>
+			<integer>0</integer>
 			<key>AuthRestart</key>
 			<false/>
 			<key>BootProtect</key>
 			<string>Bootstrap</string>
-            <key>DmgLoading</key>
-            <string>Signed</string>
-            <key>EnablePassword</key>
-            <false/>
+			<key>DmgLoading</key>
+			<string>Signed</string>
+			<key>EnablePassword</key>
+			<false/>
 			<key>ExposeSensitiveData</key>
 			<integer>6</integer>
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
-            <key>PasswordHash</key>
-            <data></data>
-            <key>PasswordSalt</key>
-            <data></data>
-            <key>ScanPolicy</key>
-            <integer>0</integer>
-            <key>SecureBootModel</key>
-            <string>Disabled</string>
+			<key>PasswordHash</key>
+			<data></data>
+			<key>PasswordSalt</key>
+			<data></data>
+			<key>ScanPolicy</key>
+			<integer>0</integer>
+			<key>SecureBootModel</key>
+			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1014,7 +1007,7 @@
 				<key>prev-lang:kbd</key>
 				<string>fr-FR:60</string>
 				<key>SystemAudioVolume</key>
-				<data>Rg==</data>
+				<data>KA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1070,8 +1063,8 @@
 		<dict>
 			<key>AdviseWindows</key>
 			<false/>
-            <key>SystemMemoryStatus</key>
-            <string>Auto</string>
+			<key>SystemMemoryStatus</key>
+			<string>Auto</string>
 			<key>MLB</key>
 			<string>C02016104J9N9PR8C</string>
 			<key>ROM</key>
@@ -1112,9 +1105,9 @@
 		<key>Audio</key>
 		<dict>
 			<key>AudioSupport</key>
-			<false/>
+			<true/>
 			<key>AudioDevice</key>
-			<string></string>
+			<string>PciRoot(0x0)/Pci(0x1F,0x3)</string>
 			<key>AudioCodec</key>
 			<integer>0</integer>
 			<key>AudioOut</key>
@@ -1122,9 +1115,9 @@
 			<key>MinimumVolume</key>
 			<integer>20</integer>
 			<key>PlayChime</key>
-			<false/>
+			<true/>
 			<key>VolumeAmplifier</key>
-			<integer>0</integer>
+			<integer>143</integer>
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
@@ -1132,6 +1125,8 @@
 		<array>
 			<string>OpenRuntime.efi</string>
 			<string>HfsPlus.efi</string>
+			<string>OpenCanopy.efi</string>
+			<string>AudioDxe.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -1162,8 +1157,8 @@
 			<string></string>
 			<key>DirectGopRendering</key>
 			<false/>
-            <key>ForceResolution</key>
-            <false/>
+			<key>ForceResolution</key>
+			<false/>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
 			<key>ProvideConsoleGop</key>
@@ -1178,8 +1173,8 @@
 			<false/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
-            <key>UgaPassThrough</key>
-            <false/>
+			<key>UgaPassThrough</key>
+			<false/>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
@@ -1191,18 +1186,18 @@
 			<false/>
 			<key>AppleEvent</key>
 			<false/>
-            <key>AppleFramebufferInfo</key>
-            <false/>
+			<key>AppleFramebufferInfo</key>
+			<false/>
 			<key>AppleImageConversion</key>
 			<false/>
-            <key>AppleImg4Verification</key>
-            <false/>
+			<key>AppleImg4Verification</key>
+			<false/>
 			<key>AppleKeyMap</key>
 			<false/>
 			<key>AppleRtcRam</key>
 			<false/>
-            <key>AppleSecureBoot</key>
-            <false/>
+			<key>AppleSecureBoot</key>
+			<false/>
 			<key>AppleSmcIo</key>
 			<false/>
 			<key>AppleUserInterfaceTheme</key>
