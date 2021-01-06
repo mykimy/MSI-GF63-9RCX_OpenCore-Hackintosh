@@ -33,7 +33,7 @@ Vanilla macOS Catalina installation on GF63 Thin 9RCX.
 ## What Doesn't Work
 - Discrete graphic card is not working, since macOS doesn't support Optimus technology
 - Integrated Intel Wifi card
-- PM981 NMVe (NMVe is disabled by default. You can replace original NVMe with a supported one and then remove SSDT-DNVME from config.plist to enable)
+- PM981 NMVe (NMVe port is enabled by default. You can replace original NVMe with a supported one or disable port by enable SSDT-DNVME in config.plist)
 
 ## Installation
 

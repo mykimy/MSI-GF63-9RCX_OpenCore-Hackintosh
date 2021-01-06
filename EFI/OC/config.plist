@@ -92,7 +92,7 @@
 				<key>Path</key>
 				<string>SSDT-DNVME.aml</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -474,6 +474,8 @@
 		<key>Add</key>
 		<array>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -490,6 +492,8 @@
 				<string>Lilu.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -506,6 +510,8 @@
 				<string>WhateverGreen.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -522,6 +528,8 @@
 				<string>AppleALC.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -538,6 +546,8 @@
 				<string>VirtualSMC.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -554,6 +564,8 @@
 				<string>NoTouchID.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -570,6 +582,8 @@
 				<string>RealtekRTL8111.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -586,6 +600,8 @@
 				<string>SMCBatteryManager.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -602,6 +618,8 @@
 				<string>SMCProcessor.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -618,6 +636,8 @@
 				<string>USBMap.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -634,6 +654,8 @@
 				<string>CPUFriend.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -650,6 +672,8 @@
 				<string>CPUFriendDataProvider.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -666,6 +690,8 @@
 				<string>VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -682,6 +708,8 @@
 				<string>VoodooPS2Controller.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -698,6 +726,8 @@
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string>PS2Mouse: disabled as it is a trackpad I2C device</string>
 				<key>MaxKernel</key>
@@ -714,6 +744,8 @@
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string>PS2Trackpad: disabled as it is a I2C trackpad</string>
 				<key>MaxKernel</key>
@@ -730,6 +762,8 @@
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -746,6 +780,8 @@
 				<string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -762,6 +798,8 @@
 				<string>VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -778,6 +816,8 @@
 				<string>VoodooI2C.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -794,6 +834,8 @@
 				<string>VoodooI2CHID.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -810,6 +852,8 @@
 				<string>IntelBluetoothFirmware.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -842,9 +886,13 @@
 			<key>MinKernel</key>
 			<string></string>
 		</dict>
+		<key>Force</key>
+		<array></array>
 		<key>Patch</key>
 		<array>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
@@ -1102,6 +1150,8 @@
 			<string>Auto</string>
 			<key>MLB</key>
 			<string>C02016104J9N9PR8C</string>
+			<key>ProcessorType</key>
+			<integer>0</integer>
 			<key>ROM</key>
 			<data>ESIzAAAA</data>
 			<key>SpoofVendor</key>
