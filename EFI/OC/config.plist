@@ -1078,7 +1078,7 @@
 				<key>SystemAudioVolume</key>
 				<data>KA==</data>
 				<key>boot-args</key>
-				<string>igfxonln=1 igfxonlnfbs=0x01</string>
+				<string>igfxonln=1 igfxonlnfbs=0x01 -igfxblr</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
