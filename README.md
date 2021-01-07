@@ -26,7 +26,7 @@ Vanilla macOS Catalina installation on GF63 Thin 9RCX.
 - Integrated Camera
 - Trackpad with multi-touch gestures
 - Battery status
-- Integrated Bluetooth
+- Integrated Bluetooth ([IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) installation needed)
 - All USB Ports
 - Function Key
 
