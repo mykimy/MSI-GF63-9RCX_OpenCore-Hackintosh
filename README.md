@@ -39,10 +39,13 @@ Vanilla macOS Catalina installation on GF63 Thin 9RCX.
 
 ### First-time Installation Steps
 - Change BIOS settings
+    - Show hidden settings with: CTRL Right + Maj Right + ALT Left + F2
     - Turn off Secure Boot
     - Turn off CFG Lock
     - Disable Fast Boot
     - Select UEFI mode without CSM
+    - Set "FCLK Frequency for early Power On" to 1GHz under Advanced -> CPU Configuration
+
 - Create install media
     - Follow Windows, macOS or Linux [guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/opencore-efi#setting-up-the-efi)
     - Copy the provided `EFI` folder into the USB drive EFI partition of the newly created install media
