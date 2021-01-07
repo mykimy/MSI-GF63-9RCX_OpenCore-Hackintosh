@@ -7,7 +7,7 @@
 	<key>CFBundleGetInfoString</key>
 	<string>v1.0</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.corpnewt.USBMap</string>
+	<string>com.dortania.USBmap</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -28,101 +28,147 @@
 			<string>com.apple.driver.AppleUSBMergeNub</string>
 			<key>IOClass</key>
 			<string>AppleUSBMergeNub</string>
-			<key>IONameMatch</key>
-			<string>XHC</string>
+			<key>IOPathMatch</key>
+			<string>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/XHC@14/XHC@14000000</string>
 			<key>IOProviderClass</key>
-			<string>AppleUSBXHCIPCI</string>
+			<string>AppleIntelCNLUSBXHCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
-				<key>kUSBMuxEnabled</key>
-				<true/>
 				<key>port-count</key>
-				<data>FQAAAA==</data>
+				<data>GAAAAA==</data>
 				<key>ports</key>
 				<dict>
 					<key>HS01</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
+						<key>name</key>
+						<string>HS01</string>
 						<key>port</key>
-						<data>AQAAAA==</data>
+						<data>
+						AQAAAA==
+						</data>
 					</dict>
 					<key>HS02</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
+						<key>name</key>
+						<string>HS02</string>
 						<key>port</key>
-						<data>AgAAAA==</data>
+						<data>
+						AgAAAA==
+						</data>
 					</dict>
 					<key>HS03</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>name</key>
+						<string>HS03</string>
 						<key>port</key>
-						<data>AwAAAA==</data>
+						<data>
+						AwAAAA==
+						</data>
 					</dict>
 					<key>HS04</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>name</key>
+						<string>HS04</string>
 						<key>port</key>
-						<data>BAAAAA==</data>
+						<data>
+						BAAAAA==
+						</data>
 					</dict>
 					<key>HS05</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>name</key>
+						<string>HS05</string>
 						<key>port</key>
-						<data>BQAAAA==</data>
+						<data>
+						BQAAAA==
+						</data>
 					</dict>
 					<key>HS11</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
+						<key>name</key>
+						<string>HS11</string>
 						<key>port</key>
-						<data>CwAAAA==</data>
+						<data>
+						CwAAAA==
+						</data>
 					</dict>
 					<key>HS14</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
+						<key>name</key>
+						<string>HS14</string>
 						<key>port</key>
-						<data>DgAAAA==</data>
+						<data>
+						DgAAAA==
+						</data>
 					</dict>
 					<key>SS01</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
+						<key>name</key>
+						<string>SS01</string>
 						<key>port</key>
-						<data>EQAAAA==</data>
+						<data>
+						EQAAAA==
+						</data>
 					</dict>
 					<key>SS02</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
+						<key>name</key>
+						<string>SS02</string>
 						<key>port</key>
-						<data>EgAAAA==</data>
+						<data>
+						EgAAAA==
+						</data>
 					</dict>
 					<key>SS03</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>name</key>
+						<string>SS03</string>
 						<key>port</key>
-						<data>EwAAAA==</data>
+						<data>
+						EwAAAA==
+						</data>
 					</dict>
 					<key>SS04</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>name</key>
+						<string>SS04</string>
 						<key>port</key>
-						<data>FAAAAA==</data>
+						<data>
+						FAAAAA==
+						</data>
 					</dict>
 					<key>SS05</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>name</key>
+						<string>SS05</string>
 						<key>port</key>
-						<data>FQAAAA==</data>
+						<data>
+						FQAAAA==
+						</data>
 					</dict>
 				</dict>
 			</dict>
