@@ -5,13 +5,13 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleGetInfoString</key>
-	<string>v1.0</string>
+	<string>1.0 Copyright © 2018-2020 Headsoft. All rights reserved.</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.dortania.USBmap</string>
+	<string>com.Headsoft.USBPorts</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>USBMap</string>
+	<string>USBPorts</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
@@ -28,14 +28,28 @@
 			<string>com.apple.driver.AppleUSBMergeNub</string>
 			<key>IOClass</key>
 			<string>AppleUSBMergeNub</string>
-			<key>IOPathMatch</key>
-			<string>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/XHC@14/XHC@14000000</string>
+			<key>IONameMatch</key>
+			<string>XHC</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0xa36d8086</string>
+			<key>IOProbeScore</key>
+			<integer>5000</integer>
 			<key>IOProviderClass</key>
 			<string>AppleIntelCNLUSBXHCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
+				<key>kUSBSleepPortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBSleepPowerSupply</key>
+				<integer>5100</integer>
+				<key>kUSBWakePortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBWakePowerSupply</key>
+				<integer>5100</integer>
 				<key>port-count</key>
-				<data>GAAAAA==</data>
+				<data>
+				FQAAAA==
+				</data>
 				<key>ports</key>
 				<dict>
 					<key>HS01</key>
