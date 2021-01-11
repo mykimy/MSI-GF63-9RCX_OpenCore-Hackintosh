@@ -267,8 +267,6 @@
 				<string>VGA compatible controller</string>
 				<key>agdpmod</key>
 				<string>vit9696</string>
-				<key>igfxfw</key>
-				<data>AgAAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-portcount</key>
@@ -1042,7 +1040,7 @@
 				<key>SystemAudioVolume</key>
 				<data>KA==</data>
 				<key>boot-args</key>
-				<string>igfxonln=1 igfxonlnfbs=0x01 -igfxblr</string>
+				<string>igfxonln=1 igfxonlnfbs=0x01 -igfxblr igfxrpsc=1</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
